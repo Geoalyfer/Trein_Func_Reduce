@@ -1,0 +1,20 @@
+#- Função do módulo `functools`
+#- Retorna um valor
+#- Recebe como argumento uma função e um objeto iterável
+#- Aplica a função sobre os elementos de forma acumulativa
+
+from functools import reduce
+
+lista = [1, 2, 3, 4, 5]
+print(lista)
+
+reduce(lambda x, y: x + y, lista)
+15
+
+reduce(lambda x, y: x * y, lista)
+120
+
+lista = ['a', 'b', 'c', 'd', 'e', 'f']
+
+reduce(lambda x, y: x + y, lista)
+'abcdef'
